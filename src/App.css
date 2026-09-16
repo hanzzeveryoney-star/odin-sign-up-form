@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-VariableFont_wdth,wght.ttf');
+}
+
+
+
+
+@font-face {
+    font-family: 'Norsebold';
+    src: url('/fonts/Norsebold.woff2') format('woff2');
+}
+
+
+.container {
+    background-color: #faf8f8;
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    position: relative;
+}
+
+.sidebar {
+    width: 400px;
+    background-image: url("/photo.avif");
+    height: 100vh;
+    position: relative;
+}
+
+.photos {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.dua {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+
+}
+
+.odin {
+    display: flex;
+    color: white;
+    font-size: 70px;
+    font-weight: 100;
+    font-family: 'Norsebold';
+}
+
+.odin-lined {
+    display: flex;
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+}
+
+.parag {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.parag p {
+    margin: 1px 0;
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 500;
+}
+
+p:last-child {
+    margin-top: 30px;
+}
+
+.register {
+    width: 100%;
+    background-color: white;
+    padding: 30px 40px;
+    box-sizing: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 80px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.do {
+    font-family: 'Roboto';
+}
