@@ -24,9 +24,11 @@ function App() {
                 <div className="parag">
                     <p>
                         This is not a real online service! You know you need
-                        something like this in your life to help you realize
-                        your deepest dreams.
+                        something
                     </p>
+
+                    <p>like this in your life to help you realize
+                        your deepest dreams.</p>
 
                     <p>
                         Sign up <i>now</i> to get started.
@@ -42,37 +44,37 @@ function App() {
 
                     <div className="form-row">
                         <div className="field">
-                            <label>First Name</label>
-                            <input />
+                            <label>FIRST NAME</label>
+                            <input type="text" required/>
                         </div>
 
                         <div className="field">
-                            <label>Last Name</label>
-                            <input />
-                        </div>
-                    </div>
-
-                    <div className="form-row">
-                        <div className="field">
-                            <label>Email</label>
-                            <input />
-                        </div>
-
-                        <div className="field">
-                            <label>Phone Number</label>
-                            <input />
+                            <label>LAST NAME</label>
+                            <input type="text" required/>
                         </div>
                     </div>
 
                     <div className="form-row">
                         <div className="field">
-                            <label>Password</label>
-                            <input />
+                            <label>EMAIL</label>
+                            <input type="email" required />
                         </div>
 
                         <div className="field">
-                            <label>Confirm Password</label>
-                            <input />
+                            <label>PHONE NUMBER</label>
+                            <input type="tel" required/>
+                        </div>
+                    </div>
+
+                    <div className="form-row">
+                        <div className="field">
+                            <label>PASSWORD</label>
+                            <input type="password" required minLength="8" />
+                        </div>
+
+                        <div className="field">
+                            <label>CONFIRM PASSWORD</label>
+                            <input type="password" required minLength="8" />
                         </div>
                     </div>
                 </div>

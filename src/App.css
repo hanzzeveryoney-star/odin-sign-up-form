@@ -77,7 +77,9 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 50px;
-    margin-top: 100px;
+    margin-top: 120px;
+    position: relative;
+    top: -80px;
 }
 
 .parag p {
@@ -91,23 +93,70 @@ p:last-child {
     margin-top: 30px;
 }
 
+.form-section {
+    flex: 1;
+}
+
 .register {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: white;
-    padding: 30px 40px;
-    box-sizing: 100%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    gap: 20px;
+    position: relative;
+    top: -40px;
+    box-shadow: 0 8px 6px -6px rgba(53, 53, 53, 0.2); 
 }
 
 .form-row {
     display: flex;
-    gap: 80px;
+    gap: 40px;
 }
 
 .field {
+    position: relative;
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
 
 .do {
+    position: relative;
     font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: -20px;
+    margin-left: 10px;
+    top: 15px;
+}
+
+.field label {
+    font-size: 12px;
+    font-family: "Roboto";
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(82, 81, 81);
+}
+
+input {
+  width: 200px;
+  height: 7px;
+  font-size: 12px;
+  padding: 5px 10px;
+  border: 2px solid rgb(233, 233, 233);
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.2s cubic-bezier(0.22, 1, 0.36, 1), border-color cubic-bezier(0.22, 1, 0.36, 1);
+  outline: none;
+  border-radius: 3px;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(53, 53, 53, 0.2); 
+  transform: scale(1.02) translateY(-1px);
+}
+
+input:user-invalid {
+    border-color: red;
 }
