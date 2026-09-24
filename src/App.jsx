@@ -79,6 +79,11 @@ function App() {
                     </div>
                 </div>
 
+                <div className="createe">
+                    <button type="submit" className="akun">Create Account</button>
+                    <p className="have">Already have an account? <a className="log">Log in</a> </p>
+                </div>
+
             </section>
 
         </main>

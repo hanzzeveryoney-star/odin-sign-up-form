@@ -89,12 +89,14 @@ body {
     font-weight: 500;
 }
 
-p:last-child {
+.parag p:last-child {
     margin-top: 30px;
 }
 
 .form-section {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .register {
@@ -159,4 +161,45 @@ input:focus {
 
 input:user-invalid {
     border-color: red;
+}
+
+.create {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.createe {
+    position: relative;
+    padding: 10px 25px;
+    margin-left: 25px;
+    top: -25px;
+}
+
+.have {
+    font-family: "Roboto";
+    font-weight: 450;
+}
+
+.log {
+    font-family: "Roboto";
+    font-weight: 700;
+    color: #5f794a;
+}
+
+.akun {
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    font-family: "Roboto";
+    background-color: #596D48;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 2px 0 #646363;
+    transition: box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.akun:active {
+    box-shadow: 0 0 6px 0 #646363;
+    transform: scale(0.98);
 }
